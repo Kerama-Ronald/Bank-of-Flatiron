@@ -7,7 +7,7 @@ function App() {
 
   // Fetch transactions from API
   useEffect(() => {
-    fetch('http://localhost:8001')
+    fetch('https://my-json-server.typicode.com/Kerama-Ronald/Bank-of-Flatiron/transcations')
       .then(response => response.json())
       .then(data => setTransactions(data))
       .catch(error => console.log(error));
