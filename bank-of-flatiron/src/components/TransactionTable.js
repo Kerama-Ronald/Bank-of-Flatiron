@@ -7,7 +7,7 @@ function App() {
 
   // Fetch transactions from API
   useEffect(() => {
-    fetch('https://my-json-server.typicode.com/Kerama-Ronald/Bank-of-Flatiron/transcations')
+    fetch('https://my-json-server.typicode.com/Kerama-Ronald/Bank-of-Flatiron/transactions')
       .then(response => response.json())
       .then(data => setTransactions(data))
       .catch(error => console.log(error));
